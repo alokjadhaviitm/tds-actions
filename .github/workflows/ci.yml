@@ -1,0 +1,16 @@
+name: Email Check Action
+
+# Run when you push, and also allow a manual "Run workflow" click.
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      # The step NAME must contain the email address.
+      - name: "23f3003878@ds.study.iitm.ac.in"
+        run: echo "Hello, world! This step is named with my email."
